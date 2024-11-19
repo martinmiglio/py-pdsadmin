@@ -2,9 +2,10 @@
 name = "py-pdsadmin"
 packages = [{ include = "pypdsadmin" }]
 version = "v0.0.0"
-description = ""
+description = "A Python implementation of pdsadmin"
 readme = "README.md"
 authors = ["Martin Miglio <code@martinmiglio.dev>"]
+repository = "https://github.com/martinmiglio/py-pdsadmin"
 
 [tool.poetry.dependencies]
 python = "<3.13,>=3.9"
