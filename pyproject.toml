@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "py-pdsadmin"
+packages = [{ include = "pypdsadmin" }]
+version = "v0.0.0"
+description = ""
+readme = "README.md"
+authors = ["Martin Miglio <code@martinmiglio.dev>"]
+
+[tool.poetry.dependencies]
+python = "<3.13,>=3.9"
+cleo = "^2.1.0"
+python-dotenv = "^1.0.1"
+requests = "^2.32.3"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.6.9"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.build.dependencies]
+twine = "^5.1.1"
+
+[tool.poetry.group.build]
+optional = true
+
+[tool.poetry.scripts]
+pdsadmin = "pypdsadmin.main:main"
+
+[tool.ruff.lint]
+select = ["ALL"]
+
+[tool.ruff]
+line-length = 120
